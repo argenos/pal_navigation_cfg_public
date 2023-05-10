@@ -3,7 +3,7 @@
   <arg name="global_planner" default="global_planner"/>
   <arg name="local_planner"  default="pal"/>
 
-  <arg name="odom"    default="/mobile_base_controller/odom"/>
+  <arg name="odom"    default="mobile_base_controller/odom"/>
   <arg name="cmd_vel" default="/nav_vel"/>
 
   <node pkg="move_base" type="move_base" name="move_base" clear_params="true" output="screen" ns="move_by_unsafe">
