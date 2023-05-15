@@ -1,6 +1,6 @@
 # Independent settings for the planner's costmap
 global_costmap:
-  map_type: costmap
+  # map_type: costmap
 
   global_frame    : map
   robot_base_frame: base_footprint
@@ -40,8 +40,8 @@ global_costmap:
 
   obstacle_sonar_layer:
     enabled: false
-    ns: ""
-    topics: ["/sonar_base"]
+    ns: "/$(arg robot_namespace)"
+    topics: ["sonar_base"]
     no_readings_timeout: 0.0
     clear_threshold: 0.20
     mark_threshold: 0.80
